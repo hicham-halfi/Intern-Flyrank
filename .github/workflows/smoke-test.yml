@@ -59,7 +59,7 @@ jobs:
           # an unrun copy. While you are mid-track this only warns; once submission/
           # paper_url.txt holds a real URL (final state), it fails the build - a finished
           # track must not ship unexecuted deliverables. Fresh skeletons stay silent.
-          import json, glob, sys
+          import ast, json, glob, sys
           url = ""
           try:
               url = open("submission/paper_url.txt").readline().strip()
@@ -73,6 +73,13 @@ jobs:
               except Exception:
                   continue
               code = [c for c in nb.get("cells", []) if c.get("cell_type") == "code"]
+              # Template guidance comments are not filled-in executable code.
+              try:
+                  executable = any(ast.parse("".join(c.get("source", []))).body for c in code)
+              except SyntaxError:
+                  executable = True  # Keep malformed code subject to the check.
+              if not executable:
+                  continue
               src = sum(len("".join(c.get("source", []))) for c in code)
               has_out = any(c.get("outputs") for c in code)
               if code and src > 200 and not has_out:
