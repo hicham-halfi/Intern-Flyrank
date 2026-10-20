@@ -61,3 +61,9 @@ A one-time Codex reminder is active for Tuesday, 27 October 2026, to add the ML 
 The build context is preserved in this repository's scripts, requirements, notebooks, documentation and agent README instead of a Claude Project, which was not available in the user's environment. The reminder does not assert that an agent demo or video already exists.
 
 The portfolio URL has now been saved in LinkedIn's contact information as a Professional Portfolio and verified by reopening the contact dialog. This supersedes the earlier verification entry saying no LinkedIn changes had been performed.
+
+## Phone confirmation and polish — 2026-10-20
+
+The user reported testing the live portfolio on a real phone and confirmed that everything was clear. This is user-reported evidence; phone model and screenshot were not supplied. Browser viewport emulation was inconclusive and is not counted as the phone test.
+
+Fixed singular calculator wording (1 complete review), allowed long results to wrap, protected the case-study grid from intrinsic overflow, and respected reduced-motion preferences. These are code-audit fixes; no claim is made that the user observed these defects on their phone.

@@ -1,0 +1,47 @@
+{
+  "fixture_scope": "Synthetic Markdown live-model checks; PDF integration is a separate run",
+  "checks": [
+    {
+      "case": "standard extraction",
+      "pass": false,
+      "status": "saved",
+      "note": "notes\\standard-20261020T190501775296Z.md"
+    },
+    {
+      "case": "missing baseline",
+      "pass": true,
+      "status": "saved",
+      "note": "notes\\missing-20261020T190542081737Z.md"
+    },
+    {
+      "case": "unrelated refusal",
+      "pass": true,
+      "status": "refused",
+      "note": null
+    },
+    {
+      "case": "unknown algorithm triggers real lookup",
+      "pass": true,
+      "status": "saved",
+      "note": "notes\\unknown-20261020T190727845330Z.md"
+    },
+    {
+      "case": "repeat input uses new filename",
+      "pass": true,
+      "status": "saved",
+      "note": "notes\\standard-20261020T190810236332Z.md"
+    },
+    {
+      "case": "previous notes unchanged",
+      "pass": true
+    }
+  ],
+  "interpretation": {
+    "standard extraction": "Predicate failed: the model excluded explicitly fictional experimental metrics. Original failed receipt retained.",
+    "unknown algorithm": "Lookup path executed, but arXiv returned HTTPError. Retrieval success is not established.",
+    "local PDF": "Ollama incorrectly refused the tutorial after 549.5 seconds; relevance failure.",
+    "approved user PDF": "Codex saved a grounded tutorial note in 38.3 inference seconds; 2 architecture quotes, 1 data quote, no experimental metrics.",
+    "public full PDF": "Attention Is All You Need, arxiv:1706.03762; 15 pages, 49.03 inference seconds; 1 architecture, 1 data, 2 metric quotes accepted; note saved.",
+    "guardrails": "Five deterministic checks passed: traversal, absolute outside path, unsafe query, overwrite prevention, existing note preservation."
+  }
+}

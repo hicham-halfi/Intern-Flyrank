@@ -14,5 +14,5 @@ form.addEventListener("submit",event=>{
   const value=capacity(Number(form.elements.budget.value),Number(form.elements.rate.value),Number(form.elements.effort.value));
   if(!value){result.textContent="Enter a valid budget, positive rate, and positive review time.";return;}
   const money=new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"});
-  result.textContent=`${value.pages} complete reviews · ${value.hours.toFixed(2)} editor-hours · ${money.format(value.cost)} planned cost · ${money.format(value.remaining)} unallocated`;
+  result.textContent=`${value.pages} complete review${value.pages === 1 ? "" : "s"} · ${value.hours.toFixed(2)} editor-hours · ${money.format(value.cost)} planned cost · ${money.format(value.remaining)} unallocated`;
 });
