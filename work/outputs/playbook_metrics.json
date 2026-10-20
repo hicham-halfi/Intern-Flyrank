@@ -1,0 +1,15 @@
+{
+  "rows": 30000,
+  "oof_precision_at_20": 0.75,
+  "base_rate": 0.5420666666666667,
+  "top20_action_counts": {
+    "Visible, weak click capture": 8,
+    "Mature and stale": 6,
+    "Other visible content": 4,
+    "Near page one": 2
+  },
+  "top20_assumed_hours": 27.0,
+  "thresholds_are_assumptions": true,
+  "queue_path": "work/outputs/ranked_action_queue.csv",
+  "prediction_scope": "retrospective out-of-client; no causal or future-performance claim"
+}
