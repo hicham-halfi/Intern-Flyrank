@@ -53,3 +53,11 @@ recorded before the corresponding assignment is described as finished.
 - Both research figures loaded. The notebook and article metrics trace to executed receipts.
 - Browser viewport override was attempted at 390px, but the reported viewport remained 1280px. It was reset. No mobile-browser or real-phone pass is claimed.
 - LinkedIn target was extracted from the supplied CV; no LinkedIn account changes or booking setup were performed.
+
+## Next-case reminder — created 2026-10-20
+
+A one-time Codex reminder is active for Tuesday, 27 October 2026, to add the ML Research Scout case study. Automation ID: `add-the-research-scout-case-study`. The native automation tool confirmed creation, and its active configuration was read back. The prompt calls for real source/evaluation/demo evidence and forbids automatic external edits or messaging others.
+
+The build context is preserved in this repository's scripts, requirements, notebooks, documentation and agent README instead of a Claude Project, which was not available in the user's environment. The reminder does not assert that an agent demo or video already exists.
+
+The portfolio URL has now been saved in LinkedIn's contact information as a Professional Portfolio and verified by reopening the contact dialog. This supersedes the earlier verification entry saying no LinkedIn changes had been performed.
