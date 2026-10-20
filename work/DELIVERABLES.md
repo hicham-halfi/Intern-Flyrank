@@ -16,6 +16,8 @@
 - [Deterministic guardrail receipt](research_scout/guardrail_checks.json)
 - [Portfolio fix log and phone confirmation](portfolio-fix-log.md)
 - [Portfolio maintenance/context/reminder guide](portfolio-guide.md)
+- [574-word retrospective draft for personal review](retrospective-draft.md)
+- [Concrete recording and review steps](remaining-actions.md)
 
 ## Verified submissions, awaiting review
 
